@@ -1,32 +1,64 @@
 # TopologicalChaos
-Assesing and Mapping LC MS data onto HUMAN1 GEM
 
-Load your list of side compund as a sidecomp.txt file stored in data/raw/human1
+Assessing and Mapping LC-MS Data onto HUMAN1 GEM
 
-To run this code you will need to install met4j
+---
 
-git clone https://forgemia.inra.fr/metexplore/met4j.git;
-cd met4j;
-mvn clean install 
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tasks](#tasks)
 
+---
+
+## Overview
+
+This project maps LC-MS data onto the HUMAN1 genome-scale metabolic model (GEM).
+
+- **Input:** List of side compounds as `sidecomp.txt` in `data/raw/human1/`
+- **Tools:** [met4j](https://forgemia.inra.fr/metexplore/met4j)
+
+---
+
+## Installation
+
+### 1. Clone met4j and Build
+
+```bash
+git clone https://forgemia.inra.fr/metexplore/met4j.git
+cd met4j
+mvn clean install
 cd met4j-toolbox
 mvn clean package
+```
 
-java -jar target/met4j-toolbox-<version>.jar
-java -cp target/met4j-toolbox-<version>.jar <Package>.<App name> -h
+---
 
-First step
+## Usage
 
-Run in the terminal to dowload HUMAN1 network into your raw data file
+### 1. Download HUMAN1 Network
+
+```bash
 cd scripts
 ./import_human1.sh
+```
 
-Then run this (arrow down) to create undirected compound graph without comparments and isolated nodes, 
-also remove side compounds
+### 2. Create Undirected Compound Graph
+
+Removes compartments, isolated nodes, and side compounds:
+
+```bash
 ./human1_net.sh
+```
+
+---
+
 ## Tasks
 
-- [x]  Load HUMAN1 xml file, code (import, save, charge from local folder) @SamSaladino
-- [ ]  Create venv requirements @SamSaladino
-- [ ]  Create graph, shell (load from local repository and export to local repository @SamSaladino
-- [ ]  Remove isolated nodes @SamSaladino
+[x] Load HUMAN1 XML file (import, save, load from local folder) @SamSaladino
+[ ] Create venv requirements @SamSaladino
+[ ] Create graph shell (load from local repository and export to local repository) @SamSaladino
+[ ] Remove isolated nodes @SamSaladino
+
+---
