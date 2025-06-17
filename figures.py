@@ -51,5 +51,6 @@ upset = UpSet(
 upset.plot()
 plt.suptitle("Upset Plot of Identifier Overlap Across Datasets", fontsize=14)
 plt.tight_layout()
-plt.savefig("~/Documents/Hackathlon/TopologicalChaos/figures/upset_plot.png", dpi=300)
+
 plt.show()
+plt.savefig("upset_plot.png", dpi=300)
