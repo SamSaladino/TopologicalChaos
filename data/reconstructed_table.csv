@@ -1,0 +1,54 @@
+main_class,assay1,assay2,assay3,assay4
+Alcohols and polyols,1.0,0.0,0.0,0.0
+Alloxazines and Isoalloxazines,1.0,1.0,0.0,0.0
+Amines,0.0,1.0,0.0,1.0
+Amino acids and peptides,1.0,0.333333,0.333333,0.426667
+Anthranilic acid alkaloids,1.0,0.0,0.5,0.5
+Azoles,1.0,0.0,0.0,0.0
+Benzamides,1.0,0.0,0.0,0.0
+Benzenes,0.833333,0.333333,0.166667,0.166667
+Benzimidazoles,1.0,0.0,0.0,0.0
+Bile acids,0.571429,0.285714,0.142857,0.142857
+Bilirubins,1.0,1.0,1.0,0.0
+Carboxylic acids,1.0,0.0,1.0,0.0
+Carnitines,1.0,0.0,0.0,0.0
+Cholines,1.0,0.0,0.0,0.0
+Diarylethers,1.0,0.0,0.0,0.0
+Disaccharides,1.0,0.0,0.0,0.0
+Fatty acids,1.0,0.0,0.0,0.0
+Fatty aldehydes,1.0,0.0,0.0,0.0
+Fatty amides,1.0,0.0,0.0,0.0
+Fatty esters,1.0,0.0,0.0,0.0
+Flavonoids,1.0,0.0,0.0,0.0
+Furanoic acids,1.0,0.0,0.0,0.0
+Glycerophosphocholines,0.75,0.5,0.0,0.25
+Heterocyclic compounds,1.0,0.0,0.0,0.0
+Histidine alkaloids,1.0,0.0,0.75,0.5
+Isoprenoids,0.666667,0.0,0.333333,0.333333
+Keto acids,1.0,1.0,0.5,0.5
+Lipoic acids,1.0,0.0,0.0,0.0
+Monoradylglycerols,1.0,0.0,0.0,0.0
+Monosaccharides,1.0,0.545455,0.272727,0.272727
+Nicotinamides,0.5,0.5,0.5,0.5
+Oligosaccharides,1.0,0.0,0.0,0.0
+Organic phosphoric acids,1.0,0.0,0.0,0.0
+Organonitrogen compounds,1.0,0.0,0.0,0.0
+Organosulfur compounds,1.0,0.0,0.0,0.0
+Ornithine alkaloids,1.0,0.75,0.75,0.5
+Phenols,1.0,1.0,0.0,1.0
+Phenylpropanoids,0.666667,1.0,0.333333,0.444444
+Phosphate esters,1.0,0.428571,0.571429,0.571429
+Pterins,1.0,0.0,1.0,0.0
+Purines,0.181818,0.181818,0.363636,0.545455
+Pyridine alkaloids,1.0,0.571429,0.285714,0.571429
+Pyrimidines,1.0,0.0,1.0,0.0
+Pyrridones,1.0,1.0,0.0,1.0
+Quinones and hydroquinones,1.0,0.0,1.0,0.0
+Short-chain acids,1.0,0.0,0.0,0.0
+Sterol esters,1.0,0.0,0.0,0.0
+Sterols,1.0,0.0,0.0,0.333333
+Sulfonic acids,0.333333,0.333333,0.333333,0.333333
+TCA acids,1.0,0.0,0.0,0.0
+Triacylglycerols,1.0,0.0,0.0,0.0
+Tryptophan alkaloids,1.0,,,
+Tyrosine alkaloids,0.8,,,
