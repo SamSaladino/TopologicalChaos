@@ -2,10 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from upsetplot import UpSet, from_memberships
 
-import pandas as pd
-import matplotlib.pyplot as plt
-from upsetplot import UpSet, from_memberships
-
 class UpSetPlotter:
     def __init__(self, data, names=None):
         """
@@ -37,19 +33,22 @@ class UpSetPlotter:
         self.presence_matrix = presence_matrix
         return presence_matrix
 
-    def build_memberships(self, exclude_all=True):
+    def build_memberships(self):
         if self.presence_matrix is None:
             self.build_presence_matrix()
         memberships = []
         for index, row in self.presence_matrix.iterrows():
             present = row[row == 1].index.tolist()
-            if present and (not exclude_all or set(present) != self.all_datasets):
+            if present:
                 memberships.append(present)
         self.memberships = memberships
         return memberships
-
-    def plot_upset(self, figsize=(10, 6), title="Upset Plot of Identifier Overlap Across Datasets", exclude_all=True, save_path=None):
-        memberships = self.build_memberships(exclude_all=exclude_all)
+    
+    def plot_upset(self, figsize=(10, 6), title="Upset Plot of Identifier Overlap Across Datasets", save_path=None):
+        """
+        Plot an UpSet plot including all intersections (including the intersection of all datasets).
+        """
+        memberships = self.build_memberships()  # Do not exclude any intersections
         upset_data = from_memberships(memberships)
         plt.figure(figsize=figsize)
         upset = UpSet(
@@ -76,12 +75,15 @@ class UpSetPlotter:
 if __name__ == "__main__":
     # Example with dict of lists
     data = {
-        "COMETS": ["A", "B", "C"],
+        "COMETS": ["A", "B", "C", "A"],
         "Gonzalez": ["B", "C", "D"],
-        "Liu": ["A", "D"],
-        "Pietzner": ["C", "E", "F", "G"]
+        "Liu": ["A"],
+        "Pietzner": ["C", "E", "F"]
     }
     plotter = UpSetPlotter(data)
+    print(plotter.build_presence_matrix())
+    print(plotter.build_memberships())
+    #print(plotter.summary())
     plotter.plot_upset(save_path="upset_plot.png")
 
 
