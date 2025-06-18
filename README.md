@@ -6,13 +6,21 @@ Assessing and Mapping LC-MS Data onto HUMAN1 GEM
 
 ## Table of Contents
 - [Overview](#overview)
+- [Second Section](#secondsection)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tasks](#tasks)
-
 ---
 
 ## Overview
+This initially is for a classification of different assays onto the HUMAN1
+network Ring Trial data
+
+### Tasks
+
+---
+
+## Second Section
 
 This project maps LC-MS data onto the HUMAN1 genome-scale metabolic model (GEM).
 
